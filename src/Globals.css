@@ -1,0 +1,40 @@
+@import url('./styles_components/Colors.css');
+/* ** FONTS ** */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-all);
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--color);
+}
+
+.wrapper {
+  display: grid;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 5px;
+  }
+}
